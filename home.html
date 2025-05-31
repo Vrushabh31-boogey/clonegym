@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=News+Cycle:wght@400;700&family=Quicksand:wght@300..700&family=Rubik+Scribble&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200..800&family=Freeman&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=News+Cycle:wght@400;700&family=Quicksand:wght@300..700&family=Rubik+Scribble&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--<link rel="stylesheet" href="style.css">-->
+</head>
+<style>
+    body{
+    background-image: url('https://t4.ftcdn.net/jpg/05/17/54/91/360_F_517549138_2FkMSPZc0Z3JREi7Hxa5FHge6cTBSNnA.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+    .right{
+        position: absolute;
+        right: 200px;
+    }
+
+      .navbar li{
+      display: inline-block;
+    }
+
+     .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding:10px 14px;
+      font-size: 20px;
+    }
+
+    .rightimg{
+        position: absolute;
+        width: 400px;
+        height: auto;
+        padding: 5%;
+        margin-left: 850px;
+    }
+
+    .left img{
+        position: absolute;
+        height: 180px;
+        margin-left: 30px;
+        margin-bottom: 800px;
+    }
+
+    .p{
+        position: absolute;
+        margin-top: 220px;
+        margin-left: 150px;
+        font-size: larger;
+        font-weight: bolder;
+        color: beige;
+        border: 2px solid;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: initial;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 25px;
+    }
+
+    /*@keyframesmoveoval {
+        animate-duration: 1s;
+        animate-delay: 1s;
+        animate-repeat: 1;
+    }*/
+
+    .p1{
+        position: absolute;
+        margin-top: 320px;
+        margin-left: 70px;
+        font-size: 50px;
+        font-weight: bold;
+        color: bisque;
+        font-family: "Quicksand", sans-serif;
+        -webkit-text-stroke: 1px bisque; /* Outline effect */
+    }
+
+    .p2{
+        position: absolute;
+        margin-left: 245px;
+        margin-top: 307px;
+        font-size: 60px;
+        font-weight: 100px;
+        color: bisque;
+        font-family: "Quicksand", sans-serif;
+    }
+
+    .p3{
+        position: absolute;
+        margin-left: 70px;
+        margin-top: 370px;
+        font-size: 60px;
+        font-weight: 100px;
+        color: bisque;
+        font-family: "Quicksand", sans-serif;
+    }
+
+    .p4{
+        position: absolute;
+        margin-top: 500px;
+        margin-left: 70px;
+        color: azure;
+        font-size: 20px;
+    }
+
+    .figure>div{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 570px;
+        margin-left: 70px;
+    }
+
+    .figure>div>span:first-child {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .figure>div>span:nth-child(2){
+        color: yellow;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .figure>div{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .flex-container1{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 569px;
+        margin-left: 330px;
+    }
+
+    .figure>div>span:first-child {
+    color: #fff;
+    font-size: 2em;
+    }
+
+    .figure>div>span:nth-child(2){
+        color: yellow;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+     .figure>div{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .flex-container2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 568px;
+        margin-left: 586px;
+    }
+
+    .figure>div>span:first-child {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .figure>div>span:nth-child(2){
+        color: yellow;
+        font-family: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .btn{
+        position: absolute;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: bolder;
+        background-color: orange;
+        margin-top: 700px;
+        margin-left: 100px;
+        border-radius: 30px;
+    }
+
+    .btn1{
+        position: absolute;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: bolder;
+        border-color: orange;
+        background-color: grey;
+        margin-top: 700px;
+        margin-left: 300px;
+        border-radius: 30px;
+    }
+
+    .heading{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .heading{
+        color: #fff;
+        font-size: 3rem;
+        font-style: italic;
+        font-weight: 700;
+        gap: 5rem;
+        text-transform: uppercase;
+        padding-top: 850px;
+    }
+
+    /*@media screen and (max-width: 700px)
+    .heading>:first-child {
+    font-size:2.5rem;
+    }*/
+
+    .textw {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 1px;
+    }
+
+    .programdata {
+        gap: 1rem;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .category1 {
+        background-color: gray;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-weight: bolder;
+        gap: 2rem;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        width: 150px;
+        margin-left: 130px;
+    }
+
+    .category2 {
+        background-color: gray;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-weight: bolder;
+        gap: 1.5rem;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        width: 150px;
+        margin-left: 500px;
+        margin-top: -189px;
+    }
+
+    .category3 {
+        background-color: gray;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-weight: bolder;
+        gap: 1.5rem;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        width: 150px;
+        margin-left: 900px;
+        margin-top: -211px;
+    }
+
+    .category4 {
+        background-color: gray;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-weight: bolder;
+        gap: 1.5rem;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        width: 150px;
+        margin-left: 503px;
+        margin-top: 60px;
+    }
+
+   .container {
+  display: flex;
+  justify-content: flex-start; /* Align content to left */
+  padding: 2rem;
+  margin-left: 30px;
+}
+
+.leftreason {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-auto-rows: auto;
+  gap: 1rem;
+  width: 50%; /* Only take half of the screen */
+}
+
+/* Make all images fit nicely */
+.leftreason > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* First Image: Left vertical */
+.leftreason > :first-child {
+  grid-row: 1 / 3; /* spans 2 rows */
+  grid-column: 1 / 2;
+}
+
+/* Second Image: top right */
+.leftreason > :nth-child(2) {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  height: 20rem;
+}
+
+/* Third Image: bottom middle */
+.leftreason > :nth-child(3) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  height: 14rem;
+}
+
+/* Fourth Image: bottom right */
+.leftreason > :nth-child(4) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  height: 14rem;
+}
+
+.details, .rightr {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightr{
+    flex: 1 1;
+    justify-content: center;
+    padding: 4rem;
+    margin-left: 760px;
+    margin-top: -676px;
+}
+
+.some{
+    color: orange;
+}
+
+.textw {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h1>:nth-child(2) {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.details {
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.points {
+    color: beige;
+    font-size: larger;
+    font-weight: 500;
+    margin-left: 80px;
+    text-transform: uppercase;
+}
+
+p{
+    color: gray;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.brands {
+    display: flex;
+    gap: 0rem;
+    margin-left: 1px;
+    margin-top: -60px;
+    filter: invert(100%);
+}
+
+.blur {
+    background: rgba(253,120,43,.69);
+    border-radius: 50%;
+    -webkit-filter: blur(140px);
+    filter: blur(140px);
+    position: absolute;
+}
+
+.plansblur2 {
+    right: 15rem;
+}
+
+
+
+    .heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+
+      font-size: 2.5rem;
+      font-style: italic;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white;
+
+      margin-top: 2rem;
+    }
+
+    .textw {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        color: transparent;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    .textw {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        color: transparent;
+      font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    .plans {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .plans>:first-child {
+        padding-bottom: 2rem;
+    }
+
+    .icon {
+        background-color: gray;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-family: Trebuchet MS,Lucida Sans Unicode,Lucida Grande,Lucida Sans,Arial,sans-serif;
+        padding: 5rem;
+        position: absolute;
+        width: 17rem;
+        margin-top: 800px;
+        margin-left: 900px;
+    }
+
+    .icon>:nth-child(2), .icon>:nth-child(3) {
+        font-size: 1rem;
+        font-weight: 700;
+        padding-top: 1rem;
+    }
+
+    .icon>span:nth-child(3) {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .feature {
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .feature {
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .feature {
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .benefit {
+        padding-top: 1rem;
+    }
+
+    .btn2 {
+        margin-top: 1rem;
+        padding: 0.8rem;
+        width: 100%;
+    }
+
+    .plans>:nth-child(2) {
+        background-color: orange;
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+
+    .icon {
+        /*background-color: gray;*/
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-family: Trebuchet MS,Lucida Sans Unicode,Lucida Grande,Lucida Sans,Arial,sans-serif;
+        padding: 2rem;
+        position: absolute;
+        width: 17rem;
+        margin-left: -600px;
+    }
+
+    .icon>:first-child {
+        height: 2rem;
+        width: 3rem;
+    }
+
+    .icon>:nth-child(2), .icon>:nth-child(3) {
+        font-size: 1rem;
+        font-weight: 700;
+        padding-top: 1rem;
+    }
+
+    .icon>span:nth-child(3) {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .feature {
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .feature>img {
+        height: 18px;
+        width: 20px;
+    }
+
+    .feature span {
+        width: 100%;
+    }
+
+    .feature {
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .feature>img {
+        height: 18px;
+        width: 20px;
+    }
+
+    .feature span {
+        width: 100%;
+    }
+
+    .feature {
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .feature>img {
+        height: 18px;
+        width: 20px;
+    }
+
+    .feature span {
+        width: 100%;
+    }
+
+    .benefit {
+        padding-top: 1rem;
+    }
+
+    .plans>:nth-child(2)>.btn2 {
+        color: orange;
+    }
+
+    .icon {
+        background-color: gray;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        font-family: Trebuchet MS,Lucida Sans Unicode,Lucida Grande,Lucida Sans,Arial,sans-serif;
+        padding: 2rem;
+        position: relative;
+        width: 17rem;
+    }
+
+    .icon>:nth-child(2), .icon>:nth-child(3) {
+        font-size: 1rem;
+        font-weight: 700;
+        padding-top: 1rem;
+    }
+
+    .icon>span:nth-child(3) {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .feature {
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .feature>img {
+        height: 18px;
+        width: 20px;
+    }
+
+    .feature span {
+        width: 100%;
+    }
+
+    .feature {
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .feature>img {
+        height: 18px;
+        width: 20px;
+    }
+
+    .feature span {
+        width: 100%;
+    }
+
+    .feature {
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .feature>img {
+        height: 18px;
+        width: 20px;
+    }
+
+    .feature span {
+        width: 100%;
+    }
+
+    .benefit {
+        padding-top: 1rem;
+    }
+
+    .btn2 {
+        margin-top: 1rem;
+        padding: 0.8rem;
+        width: 100%;
+    }
+
+    .left {
+        flex: 1 1;
+    }
+
+    .testleft {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: .3rem;
+    }
+
+    .textw {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        color: transparent;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    .say {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .testright {
+        display: flex;
+        flex: 1 1;
+        margin-left: 5rem;
+        position: relative;
+        top: 2rem;
+    }
+
+    .testright>img {
+        /*height: 256px;*/
+        margin-right: 2rem;
+        position: absolute;
+        width: 206px;
+        height: 167px;
+        margin-left: 822px;
+        margin-top: -220px;
+    }
+</style>
+<body>
+    <div class="left"></div>
+    <div class="right">
+        <ul class="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="PROGRAM.html">Programs</a></li>
+            <li><a href="Why Us.html">Why Us</a></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">Testimonials</a></li>
+    </div>
+    <div class="rightimg"><img src="images/running.png" alt="photo"></div>
+    <div class="left"><img src="images/Fitness Brand Logo in Green and Gray (1).png" alt="photo"></div>
+    <div class="p"><p>Best fitness Gym in the city</p></div>
+    <div class="p1"><p>shape</p></div>
+    <div class="p2"><p>YOUR</p></div>
+    <div class="p3"><p>IDEAL BODY</p></div>
+    <div class="p4"><p>In here we will help you to shape and build your ideal body</p></div>
+    <div class="figure">
+        <div class="flex-container">
+            <span>140+</span>
+            <span>Expert Coaches</span>
+        </div>
+        <div class="flex-container1">
+            <span>+978</span>
+            <span>MEMBERS JOINED</span>
+        </div>
+        <div class="flex-container2">
+            <span>56</span>
+            <span>FITNESS PROGRAM</span>
+        </div>
+    </div>
+    <button class="btn">Get started</button>
+    <button class="btn1">Learn more</button>
+    <div data-aos="zoom-in" class="conatiner1 aos-init" id="PROGRAM">
+        <div class="heading">
+            <span class="textw">Explore our</span>
+            <span>Program</span>
+            <span class="textw">to shape you</span>
+        </div>
+    </div>
+    <div class="programdata">
+        <div class="category1">
+            <span><i class="fas fa-dumbbell"></i></span>
+            <span>Strength Training</span>
+            <span>It refers to increasing the strength of you body</span>
+        </div>
+        <div class="category2">
+            <span><i class="fas fa-fire"></i></span>
+            <span>Fat Burning</span>
+            <span>It refers to burning you excusive fat it contain transformation from fatty to natty</span>
+        </div>
+        <div class="category3">
+            <span><i class="fas fa-heartbeat"></i></span>
+            <span>Health Fitness</span>
+            <span>It refers to normal training in which it concentrate on you heart health or controlling B.P, diabetes</span>
+        </div>
+        <div class="category4">
+            <span><i class="fas fa-heartbeat"></i></span>
+            <span>Yoga Training</span>
+            <span>It refers to stretch your all muscle and joints and spinal cord that became strong and flexible</span>
+        </div>
+    </div>
+    <div data-aos="zoom-in" class="reason aos-init aos-animate" id="Why Us">
+        <div class="container">
+            <div class="leftreason">
+                <img src="https://i.pinimg.com/736x/ca/6f/39/ca6f39c16cf0518cbe808b0e8d1623e9.jpg" alt="vertical Image">
+                <img src="https://i.pinimg.com/736x/54/d2/95/54d2959f4b8dbed467311c769bb76498.jpg" alt="Top Wide Image">
+                <img src="https://i.pinimg.com/736x/30/77/cd/3077cda2ed96cf8f49f3d177ae29cf5f.jpg" alt="Bottom Left Image">
+                <img src="https://i.pinimg.com/736x/da/aa/72/daaa72c1459a57c102d3096ccd39148c.jpg" alt="Bottom Right Image">
+            </div>
+        </div>
+    </div>
+    <div class="rightr">
+        <div class="some">
+            <h3>SOME REASONS</h3>
+        </div>
+        <div>
+            <h1>
+                <span class="textw">Why</span>
+                <span>choose us</span>
+            </h1>
+        </div>
+        <div class="details">
+            <div class="points">
+                <span>-->Over 140+ expert coaches</span>
+            </div>
+            <div class="points">
+                <span>-->Train faster and smarter</span>
+            </div>
+            <div class="points">
+                <span>-->1 freev program for new user</span>
+            </div>
+            <div class="points">
+                <span>-->Reliable partner</span>
+            </div>
+            <p>our partner</p>
+            <div class="brands">
+                <img src="images/adidas.png" alt="photo" height="100px">
+                <img src="images/nike.png" alt="photo" height="100px">
+                <img src="images/reebok.png" alt="photo" height="100px">
+            </div>
+        </div>
+    </div>
+    <div data-aos="zoom-in" class="container aos-init aos-animate" id="Plans" style="margin-top: -3200px">
+        <div class="blur plansbur1"></div>
+        <div class="blur plansblur2"></div>
+        <div class="heading">
+            <span class="textw">Ready to start</span>
+            <span>Your Journey</span>
+            <span class="textw">Now with us</span>
+            <div class="plans">
+                <div class="icon">
+                      <i class="fas fa-heartbeat" style="color:white; font-size: 40px;"></i>
+                      <span>Basic Plan</span>
+                      <span>
+                        $
+                        25
+                      </span>
+                      <div class="features">
+                        <div class="feature">
+                            <span>-->2 hours of exercise</span>
+                        </div>
+                        <div class="feature">
+                            <span>-->Free consultant to coaches</span>
+                        </div>
+                        <div class="feature">
+                            <span>-->Access to the community</span>
+                        </div>
+                      </div>
+                       <div class="benifits">
+            <span>-->See more benefit</span>
+        </div>
+        <button class="btn2">join now</button>
+                </div>
+                <div class="icon">
+                     <i class="fas fa-heartbeat" style="color:white; font-size: 40px;"></i>
+                     <span>Premium Plan</span>
+                     <span>
+                        $
+                        45
+                     </span>
+                     <div class="features">
+                        <div class="feature">
+                            <span>2 hour of exersice</span>
+                        </div>
+                        <div class="feature">
+                            <span>Free consultant</span>
+                        </div>
+                        <div class="feature">
+                            <span>Access to minibar</span>
+                        </div>
+                     </div>
+                     <div class="benefit">
+                        <span>See more benifits</span>
+                     </div>
+                     <button class="btn2">Join now</button>
+                </div>
+                <div class="icon">
+                     <i class="fas fa-heartbeat" style="color:white; font-size: 40px;"></i>
+                     <span>Proplan</span>
+                     <span>
+                        $
+                        55
+                     </span>
+                     <div class="features">
+                        <div class="feature">
+                            <span>2 hours of exercises</span>
+                        </div>
+                        <div class="feature">
+                            <span>Free consultants</span>
+                        </div>
+                        <div class="feature">
+                            <span>Access to the community</span>
+                        </div>
+                     </div>
+                     <div class="benefit">
+                        <span>See more benefit</span>
+                     </div>
+                     <button class="btn2">Join now</button>
+                </div>
+            </div>
+        </div>
+        <div data-aos="zoom-in" class="testimonial aos-init" id="Testimonials" style="margin-top: 5500px;
+    margin-left: -1200px;">
+            <div class="left">
+                <div>
+                    <span style="color:orange">TESTIMONIALS</span>
+                </div>
+                <div class="testleft">
+                    <span class="textw">WHAT THEY</span>
+                    <span class="say">SAY ABOUT US</span>
+                    <span style="opacity: 1; transform: none;">
+                        I made the right choice by choosing the fitclub an by choosing the right gym
+                        >
+                    </span>
+                    <span style="color: orange;">Spiderman</span>
+                    <span>hero</span>
+                </div>
+            </div>
+            <div class="testright">
+                <div style="opacity: 0; transform: none;"></div>
+                <div style="opacity: 0; transform: none;"></div>
+                <img src="images/saketgokhale.png" alt style="opacity: 1; transform: none;">
+                <div class="arrows"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
